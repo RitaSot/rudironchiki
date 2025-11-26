@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект команды "Рудирончики" для кейс-чемпионата "КАПЧА"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="container">
+                <h1>Станция мониторинга Экологической обстановки</h1>
+                <p>Проект команды "Рудирончики" для кейс-чемпионата "КАПЧА"</p>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <a href="#graphics" class="full-width-btn black">
+                    <span>К графикам</span>
+                </a>
+
+                <a href="#team" class="full-width-btn transparent">
+                    <span>О нас</span>
+                </a>
+
+                <div class="wide-section">
+                    <div class="image-container">
+                        <img src="images/photo1.png" alt="Изображение" class="wide-image">
+                    </div>
+                    <div class="text-content">
+                        <p>Инновационная система мониторинга экологических показателей в реальном времени</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/photo2.png" alt="Изображение" class="wide-image">
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2 class="section-title" id="team">Участники данного проекта</h2>
+
+                <!-- Карусель участников -->
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="team-member">
+                            <div class="member-photo-container">
+                                <img src="images/Artem.jpg" alt="Искрин Артем" class="member-photo">
+                            </div>
+                            <h3>Искрин Артем</h3>
+                            <p>Разработчик бекэнда и аппаратной части</p>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-photo-container">
+                                <img src="images/Rita.jpg" alt="Сотникова Маргарита" class="member-photo">
+                            </div>
+                            <h3>Сотникова Маргарита</h3>
+                            <p>3D моделирование, сборка, работа с фронтендом</p>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-photo-container">
+                                <img src="images/Agata.jpg" alt="Шушкевич Агата" class="member-photo">
+                            </div>
+                            <h3>Шушкевич Агата</h3>
+                            <p>Фронтенд, 3D дизайн, оформление презентации и документации</p>
+                        </div>
+                    </div>
+
+                    <!-- Кнопки навигации карусели -->
+                    <button class="carousel-btn prev-btn">&#10094;</button>
+                    <button class="carousel-btn next-btn">&#10095;</button>
+
+                    <!-- Индикаторы карусели -->
+                    <div class="carousel-indicators">
+                        <span class="indicator active" data-index="0"></span>
+                        <span class="indicator" data-index="1"></span>
+                        <span class="indicator" data-index="2"></span>
+                    </div>
+                </div>
+
+                <div class="wide-section second-wide">
+                    <div class="image-container">
+                        <img src="images/photo3.png" alt="Изображение" class="wide-image">
+                    </div>
+                    <div class="text-content">
+                        <p>Современные методы анализа и визуализации экологических данных</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/photo4.png" alt="Изображение" class="wide-image">
+                    </div>
+                </div>
+
+                <div class="chart-container" id="graphics">
+                    <h2 class="section-title">График мониторинга</h2>
+
+                    <!-- Переключатель графиков в виде стрелок -->
+                    <div class="chart-controls">
+                        <button class="chart-nav-btn prev-chart-btn">&#10094;</button>
+                        <div class="chart-title">Температура</div>
+                        <button class="chart-nav-btn next-chart-btn">&#10095;</button>
+                    </div>
+
+                    <!-- Контейнеры для графиков -->
+                    <div class="charts-wrapper">
+                        <div class="chart-placeholder active" id="temperature-chart">
+                            <div class="chart-content">
+                                <div class="chart-bars">
+                                    <div class="bar" style="height: 70%"></div>
+                                    <div class="bar" style="height: 85%"></div>
+                                    <div class="bar" style="height: 60%"></div>
+                                    <div class="bar" style="height: 90%"></div>
+                                    <div class="bar" style="height: 75%"></div>
+                                    <div class="bar" style="height: 80%"></div>
+                                    <div class="bar" style="height: 65%"></div>
+                                </div>
+                                <div class="chart-labels">
+                                    <span>Пн</span>
+                                    <span>Вт</span>
+                                    <span>Ср</span>
+                                    <span>Чт</span>
+                                    <span>Пт</span>
+                                    <span>Сб</span>
+                                    <span>Вс</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart-placeholder" id="humidity-chart">
+                            <div class="chart-content">
+                                <div class="chart-line">
+                                    <svg viewBox="0 0 100 50" class="line-svg">
+                                        <path d="M0,40 L20,30 L40,35 L60,20 L80,25 L100,10"
+                                              stroke="#45AEAC" stroke-width="2" fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="chart-labels">
+                                    <span>Пн</span>
+                                    <span>Вт</span>
+                                    <span>Ср</span>
+                                    <span>Чт</span>
+                                    <span>Пт</span>
+                                    <span>Сб</span>
+                                    <span>Вс</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart-placeholder" id="pressure-chart">
+                            <div class="chart-content">
+                                <div class="chart-area">
+                                    <svg viewBox="0 0 100 50" class="area-svg">
+                                        <path d="M0,40 L20,30 L40,35 L60,20 L80,25 L100,10 L100,50 L0,50 Z"
+                                              fill="rgba(69, 174, 172, 0.3)" stroke="#45AEAC" stroke-width="1" />
+                                    </svg>
+                                </div>
+                                <div class="chart-labels">
+                                    <span>Пн</span>
+                                    <span>Вт</span>
+                                    <span>Ср</span>
+                                    <span>Чт</span>
+                                    <span>Пт</span>
+                                    <span>Сб</span>
+                                    <span>Вс</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart-placeholder" id="co2-chart">
+                            <div class="chart-content">
+                                <div class="chart-dots">
+                                    <div class="dot" style="left: 10%; bottom: 30%"></div>
+                                    <div class="dot" style="left: 25%; bottom: 60%"></div>
+                                    <div class="dot" style="left: 40%; bottom: 40%"></div>
+                                    <div class="dot" style="left: 55%; bottom: 70%"></div>
+                                    <div class="dot" style="left: 70%; bottom: 50%"></div>
+                                    <div class="dot" style="left: 85%; bottom: 80%"></div>
+                                </div>
+                                <div class="chart-labels">
+                                    <span>Пн</span>
+                                    <span>Вт</span>
+                                    <span>Ср</span>
+                                    <span>Чт</span>
+                                    <span>Пт</span>
+                                    <span>Сб</span>
+                                    <span>Вс</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Индикаторы графиков -->
+                    <div class="chart-indicators">
+                        <span class="chart-indicator active" data-chart="temperature"></span>
+                        <span class="chart-indicator" data-chart="humidity"></span>
+                        <span class="chart-indicator" data-chart="pressure"></span>
+                        <span class="chart-indicator" data-chart="co2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>Станция мониторинга Экологической обстановки &copy; 2023</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
